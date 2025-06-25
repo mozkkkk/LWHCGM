@@ -211,7 +211,6 @@ class HCGMNet_light(nn.Module):
         #         plt.savefig('./test_result/feature_fuse-v2/' + 'v2-fuse-' + str(num) + '.png')
         # change_map = self.decoder(torch.cat((layer1,layer2_1,layer3_1,layer4_1), dim=1))
         # ---------------注释这两句------------------------
-        #change_map = change_map + F.interpolate(torch.abs(A-B).mean(dim=1,keepdim=True), layer1.size()[2:], mode='bilinear', align_corners=True)
         layer2 = self.cgm_2(layer2, change_map)
         layer3 = self.cgm_3(layer3, change_map)
         layer4 = self.cgm_4(layer4, change_map)
