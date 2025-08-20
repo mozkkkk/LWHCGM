@@ -3,6 +3,10 @@
 
 ## Usage
 
+## Dataset
+
+The dataset used in this project is publicly available and can be found using a standard web search.
+
 ### Training
 
 To train the model from scratch, you can run the `train.py` script. Key hyperparameters such as learning rate, batch size, and number of epochs can be configured directly within the script.
